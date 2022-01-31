@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recipe Creator</title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src="main.js"></script>
+    </head>
+    <body onload="onload()">
+        <h1>Recipe Creator</h1>
+        <div id="name-selector">
+            <input id="nameinput" maxlength="9">
+            <p id="nameinputwarning" style="color: red;"></p>
+        </div>
+        <div id="recipe-selector">
+            <select name="recipeselect" id="recipe1">
+            </select>
+            <select name="recipeselect" id="recipe2">
+            </select>
+            <p id="recipeinputwaring" style="color: red;">Recipe Already Exists</p>
+        </div>
+        <div id="decoration-selector">
+            <input id="color" type="color" value="#ffffff"><br>
+            <input id="decoration" value="none">
+            <p id="decorationinputwarning" style="color: red;"></p>
+        </div>
+        <div id="example" class="example"></div>
+        <div id="post">
+            <button id="postinput" onclick="createCommand()">Post Recipe</button>
+        </div>
+    </body>
+</html>
